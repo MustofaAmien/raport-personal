@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Madura</title>
+    <!-- Masukkan link stylesheet Anda di sini -->
+    <style>
+        /* Tambahkan gaya CSS Anda di sini */
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 25px;
+}
+
+.navbar a {
+    color: black;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.navbar a:hover {
+    background-color: black;
+    color: white;
+}
+
+.grid{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 80px;
+        align-items: center;
+        grid-gap: 30px;
+    }
+
+    img{
+        object-fit: cover;
+    }
+
+    .grid > article{
+        box-shadow: 10px 5px 5px 0px black;
+        border-radius: 30px;
+        text-align: center;
+        background: 300px;
+    }
+
+    .grid > article img {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        width: 100%;
+    }
+
+    @media (max-width : 1000px){
+        .grid{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
+    .card {
+        /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-sizing: 40px;
+        border: 2px grey;
+        transition: 0.3s;
+        width: 100%;
+        margin-bottom: 20px;*/
+
+        width: 200px;
+        height: 250px;
+        border: 3px solid grey;
+        border-radius: 20px;
+        margin-bottom: 8px;
+        margin-left : 8px;
+        float: left;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .card .content {
+        text-align: center;
+    }
+
+.putih {
+    color: #ffffff;
+}
+
+.menu-links {
+    display: flex;
+}
+
+.menu-links a {
+    color: black;
+    text-decoration: none;
+    margin-left: 35px; /* Atur jarak antara tautan */
+}
+
+.menu-links a.active {
+    background-color: black;
+    color: white;
+}
+
+img {
+    order: -1; /* Menggeser gambar ke paling kiri */
+    margin-right: auto; /* Mendorong gambar ke pojok kiri */
+    
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0px; /* Sesuaikan padding sesuai kebutuhan */
+    margin-top: 10px;
+    min-height: 10px; /* Sesuaikan tinggi sesuai kebutuhan */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Menambahkan aturan untuk gambar di sebelah kanan */
+.gambar {
+    float: right;
+    max-width: 50%; /* Membatasi lebar gambar agar tidak melebihi setengah lebar elemen */
+    margin-left: 20px; /* Memberikan ruang antara teks dan gambar */   
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <img src="logokelas.png" alt="logo" width="50" height="50">
+            <div class="menu-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">          
+        <main class="grid">
+            <article>
+            <a href="kuepancong.html">
+            <img src="kuepancong.png" alt="kuepancong" width="300px" height="300px">
+            <div class="content">
+                <h3>Kue Pancong</h3>
+        </div>
+        </a>
+        </article>
+        <article>
+            <a href="rotigembul.html">
+            <img src="rotigembul.png" alt="rotigembul" width="300px" height="300px">
+            <div class="content">
+                <h3>Roti Gembul</h3>
+            </div>
+        </a>
+        </article>
+        <article>
+            <a href="rujaklekmis.html">
+            <img src="rujaklekmis.png" alt="rujaklekmis" width="300px" height="300px">
+            <div class="content">
+                <h3>Rujak Lekmis</h3>
+        </div>
+        </a>
+    </article>
+    </div>
+    <footer>
+        <small>&copy; 2023 - All Rights Reserved</small>
+    </footer>
+</body>
+</html>

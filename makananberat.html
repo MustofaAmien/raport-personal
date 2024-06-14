@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Madura</title>
+    <!-- Masukkan link stylesheet Anda di sini -->
+    <style>
+        /* Tambahkan gaya CSS Anda di sini */
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 25px;
+}
+
+.navbar a {
+    color: black;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.navbar a:hover {
+    background-color: black;
+    color: white;
+}
+
+.grid{
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+        margin: 80px;
+        align-items: center;
+        grid-gap: 30px;
+    }
+
+    img{
+        object-fit: cover;
+    }
+
+    .grid > article{
+        box-shadow: 10px 5px 5px 0px black;
+        border-radius: 30px;
+        text-align: center;
+        background: 300px;
+    }
+
+    .grid > article img {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        width: 100%;
+    }
+
+    @media (max-width : 1000px){
+        .grid{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
+    .card {
+        /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-sizing: 40px;
+        border: 2px grey;
+        transition: 0.3s;
+        width: 100%;
+        margin-bottom: 20px;*/
+
+        position: sticky;
+        width: 200px;
+        height: 250px;
+        border: 3px solid grey;
+        border-radius: 20px;
+        transition: 0.3s;
+        margin-bottom: 8px;
+        margin-left : 8px;
+        float: left;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .card .content {
+        text-align: center;
+    }
+
+.putih {
+    color: #ffffff;
+}
+
+.menu-links {
+    display: flex;
+}
+
+.menu-links a {
+    color: black;
+    text-decoration: none;
+    margin-left: 35px; /* Atur jarak antara tautan */
+}
+
+.menu-links a.active {
+    background-color: black;
+    color: white;
+}
+
+img {
+    order: -1; /* Menggeser gambar ke paling kiri */
+    margin-right: auto; /* Mendorong gambar ke pojok kiri */
+    
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0px; /* Sesuaikan padding sesuai kebutuhan */
+    margin-top: 10px;
+    min-height: 10px; /* Sesuaikan tinggi sesuai kebutuhan */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Menambahkan aturan untuk gambar di sebelah kanan */
+.gambar {
+    float: right;
+    max-width: 50%; /* Membatasi lebar gambar agar tidak melebihi setengah lebar elemen */
+    margin-left: 20px; /* Memberikan ruang antara teks dan gambar */   
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <img src="logokelas.png" alt="logo" width="50" height="50">
+            <div class="menu-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">           
+        <main class="grid">
+            <article>
+            <a href="Ayam Geprek AA Depot Caffe.html"  >
+            <img src="geprekdepotaa.png" alt="Nasi Geprek" width="300px" height="300px">
+            <div class="content">
+                <h3>Geprek Depot Cafe</h3>
+            </div>
+        </a>
+    </article>
+    <article>
+            <a href="batagor.html">
+            <img src="batagor.png" alt="batagor" width="300px" height="300px">
+            <div class="content">
+                <h3>Batagor</h3>
+            </div>
+        </a>
+    </article>
+    <article>
+            <a href="nasigoreng.html">
+            <img src="nasigoreng.png" alt="nasigoreng" width="300px" height="300px">
+            <div class="content">
+                <h3>Nasi Goreng</h3>
+        </div>
+        </a>
+    </article>
+    <article>
+            <a href="bebekpurnama2.html">
+            <img src="bebekpurnama1.png" alt="bebekpurnama" width="300px" height="300px">
+            <div class="content">
+                <h3>Bebek Purnama</h3>
+        </div>
+        </a>
+    </article>
+    <article>
+            <a href="sate.html">
+            <img src="sate2.png" alt="Sate" width="300px" height="300px">
+            <div class="content">
+                <h3>Sate</h3>
+        </div>
+        </a>
+    </article>
+    <article>
+            <a href="geprekwdk.html">
+            <img src="nasi-geprek.png" alt="Geprekwdk" width="300px" height="300px">
+            <div class="content">
+                <h3>Ayam Geprek WDK</h3>
+        </div>
+        </a>
+    </article>
+    <article>
+            <a href="nasipecel.html">
+            <img src="nasi-pecel-piring.png" alt="Nasi Pecel" width="300px" height="300px">
+            <div class="content">
+                <h3>Nasi Pecel</h3>
+            </div>
+        </a>
+    </article>
+    <article>
+            <a href="sambalgami.html">
+            <img src="sambalgami.png" alt="Sambal Gami" width="300px" height="300px">
+            <div class="content">
+                <h3>Sambal Gami</h3>
+        </div>
+        </a>
+    </article>
+    <article>
+            <a href="plencingkangkung.html">
+            <img src="pelecing-kangkung.png" alt="Nama Makanan" width="300px" height="300px">
+            <div class="content">
+                <h3>Plencing Kangkung Surabaya</h3>
+        </div>
+        </a>
+    </article>
+    <article>
+            <a href="bebeksuramadu.html">
+            <img src="bebek-suramadu.png" alt="bebeksuramadu" width="300px" height="300px">
+            <div class="content">
+                <h3>Bebek Suramadu</h3>
+        </div>
+        </a>
+    </article>
+    <article>
+            <a href="rujak cingur kwanyar.html">
+            <img src="rujakcingurkwayar.png" alt="Rujak Cingur" width="300px" height="300px">
+            <div class="content">
+                <h3>Rujak Cingur Kwanyar</h3>
+        </div>
+        </a>
+    </article>
+    </main>
+    </div>
+    
+    <footer>
+        <small>&copy; 2023 - All Rights Reserved</small>
+    </footer>
+
+    <!-- Masukkan script JavaScript Anda di sini jika diperlukan -->
+
+</body>
+</html>
